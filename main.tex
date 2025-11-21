@@ -1,0 +1,135 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+% Springer Nature style colors
+\definecolor{SNBlue}{RGB}{0,102,153}
+
+% Line spacing
+\onehalfspacing
+
+% Title formatting - unnumbered sections
+\titleformat{\section}{\normalfont\Large\bfseries\color{SNBlue}}{}{0em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{}{0em}{}
+
+% Custom commands for Springer Nature style
+\newcommand{\fnm}[1]{\textbf{#1}}
+\newcommand{\sur}[1]{\textbf{#1}}
+\newcommand{\email}[1]{\texttt{#1}}
+
+% Author and affiliation formatting
+\newcounter{affil}
+\newcommand{\affil}[2][]{%
+  \ifx\relax#1\relax
+    \textsuperscript{#1}#2%
+  \else
+    \textsuperscript{#1}#2%
+  \fi
+}
+
+% Abstract environment
+\renewenvironment{abstract}{%
+  \small
+  \begin{center}%
+    {\bfseries \abstractname\vspace{-.5em}\vspace{0pt}}%
+  \end{center}%
+  \quotation
+}{%
+  \endquotation
+}
+
+% Keywords command
+\newcommand{\keywords}[1]{%
+  \vspace{0.5cm}
+  \noindent\textbf{Keywords:} #1
+  \vspace{0.5cm}
+}
+
+% Remove page numbers for draft
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\LARGE\bfseries\color{SNBlue} Towards a Community of Practice: Strengthening Infectious Disease Modelling Capacity in China}
+\end{center}
+
+\vspace{1cm}
+
+% Authors - commented out for now
+% \begin{center}
+%     \textbf{[Author Name]\textsuperscript{1}$^{*}$}\quad\textbf{[Co-author Name]\textsuperscript{2}}
+% \end{center}
+%
+% \vspace{0.3cm}
+%
+% % Affiliations
+% \begin{center}
+%     \textsuperscript{1}[Your Affiliation] \\
+%     \textsuperscript{2}[Co-author Affiliation] \\
+%     \vspace{0.2cm}
+%     \textsuperscript{*}\textbf{Corresponding Author:} [Author Name] \\
+%     Email: \texttt{[your.email@example.com]}
+% \end{center}
+
+\vspace{0.5cm}
+
+\section{Overview}\label{sec1}
+\begin{enumerate}
+    \item{Learning from experiences during pandemic response}
+\end{enumerate}
+
+\section{Aligning Modelling Complexity With Real Decision Needs}\label{sec2}
+\begin{enumerate}
+    \item{Not all IDMs are intended to support decision-making. But those that do often are considered most impactful.}
+    \item{Modellers sometimes chase after complexity, but complex models are not necessarily the best fit to support decision-making.}
+    \item{Decision-informing models need to be dynamic - they need to be able to incorporate new data and knowledge as they become available.}
+    \item{How will decision makers understand what evidence they need?}
+    \item{Will decision makers use the evidence from a model if they do not necessarily understand it?} 
+\end{enumerate}
+
+\section{Data}\label{sec3}
+\begin{enumerate}
+    \item{Data quality}
+    \item{Data accessibility}
+    \item{Data representativeness}
+\end{enumerate}
+
+\section{Interdisciplinary Collaboration}\label{sec4}
+\begin{enumerate}
+    \item{IDM development is intrinsically interdisciplinary.}
+    \item{This is where we can talk about the experience from the Canada experience - the language people are using are different.}
+    \item{We already discussed the problems and challenges with data - adding the interdisciplinary layer onto this makes it an even greater challenge.}
+\end{enumerate}
+
+% Jennifer will revisit the script for this section.
+\section{AI in Modelling}\label{sec5}
+\begin{enumerate}
+    \item{AI is obviously a powerful tool for IDM development.}
+    \item{Can AI replace modellers?}
+    \item{Ethical considerations. We need "responsible use" of AI in modelling - but what is being responsible mean?}
+\end{enumerate}
+
+% Jennifer will revisit the script for this section.
+\section{Building a Coherent and Continuous Training Ecosystem for IDM Capacity}\label{sec6}
+\begin{enumerate}
+    \item{AI-assisted learning may need to be carefully thought out.}
+    \item{Capcity building and strengthening is segmented.}
+    \item{Capacity building must go beyond technical skills to include leadership, communication, collaboration, mentorship, and peer learning mechanisms.}
+\end{enumerate}
+
+
+\end{document}
